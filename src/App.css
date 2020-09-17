@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap");
+
+body {
+  font-size: 16px;
+  background-image: grey;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+  z-index: 1;
+}
+
+.App {
+  text-align: center
+}
+
+.App-header {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  top: 4vw;
+}
+.heading-background {
+  position: flex;
+  opacity: 0.5;
+  font-size: 40vw;
+  left: -0.2vw;
+  margin-top: -1vw;
+  z-index: -100;
+  color: #9352ae;
+}
+.sergeK {
+  margin-top: -40vw;
+  position: absolute;
+}
+dfgdfg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-size: 1vw;
+  font-weight: 400;
+  padding: 2vw;
+  margin-right: 50vw;
+}
+nav {
+  position: fixed;
+  left: 60vw;
+  top: 6vw;
+  z-index: 200;
+  width: 30vw;
+}
+nav li {
+  display: inline-block;
+  cursor: pointer;
+}
+nav li .link {
+  text-decoration: none;
+  color: black;
+  background: rgba(0, 255, 0, 0.3);
+  padding: 0.5vw;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+li .link:hover {
+  background: rgba(0, 255, 0, 1);
+  color: white;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0);
+}
+.active {
+  color: black;
+  opacity: 1;
+}
+
+.header-title button {
+  background: black;
+  border: 0px;
+  padding: 1vw 3vw;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -ms-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+}
+.header-title button:hover {
+  opacity: 0.8;
+}
+.header-title button a {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  text-decoration: none;
+}
+.header-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3vw;
+  top: 2vw;
+  position: absolute;
+  background: rgba(5,5,5,0.2);
+  margin-left: 20vw;
+  width: 80vw !important;
+  text-align: left;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+}
+.about-content {
+  position: relative;
+  left: 15vw;
+}
+.about-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vw;
+  text-align: left;
+}
+.about-content p {
+  font-size: 1.3vw;
+  text-align: left;
+  width: 37vw;
+}
+.about img {
+  margin-left: 1vw;
+}
+.work {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 8vw;
+  align-items: center;
+}
+.work .heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vw;
+  text-align: left;
+}
+.work .work-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2vw;
+}
+
+.project img {
+  width: 30vw;
+  height: 30vw;
+}
+.contact {
+  position: relative;
+  top: 20vw;
+  left: 15vw;
+  text-align: left;
+}
+.contact h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5vw;
+  text-align: left;
+}
+.amazing-color {
+  color: #9352ae;
+}
+
+.contact .vwail {
+  color: black;
+  font-size: 2vw;
+}
+.contact li {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 1vw;
+  margin-left: 0;
+}
+.contact li a {
+  text-decoration: none;
+  color: black;
+}
+.footer {
+  position: relative;
+  top: 2vw;
+  padding: 1vw;
+}
+.footer a {
+  text-decoration: none;
+  color: #2c59fb;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  body {
+    font-size: 6px;
+  }
+  header h1 {
+    font-size: 5vw;
+    padding: 1vw;
+    margin-right: 0vw;
+  }
+
+  .heading-background {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .header-title {
+    font-size: 3vw;
+    text-align: left;
+    top: 1vw;
+    left: 1vw;
+  }
+  .about {
+    position: relative;
+    display: flex;
+    top: -30vw;
+  }
+  .about img {
+    display: none;
+  }
+  .about-content {
+    left: 2vw;
+  }
+  .about-content p {
+    font-size: 3.5vw;
+    text-align: left;
+    width: 300px;
+  }
+
+  .work {
+    left: 2vw;
+    top: 2vw;
+    align-items: flex-start;
+  }
+  .work .work-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5vw;
+  }
+  .project img {
+    width: 45vw;
+    height: 45vw;
+  }
+
+  .contact {
+    top: 15vw;
+    left: 2vw;
+  }
+  .contact h1 {
+    font-size: 4vw;
+  }
+  .contact .vwail {
+    font-size: 3.5vw;
+  }
+
+  .contact li {
+    display: block;
+    padding: 2vw;
+  }
+  .contact li a {
+    font-size: 2.5vw;
+  }
+  .footer {
+    top: 4vw;
+    padding: 1vw;
+    font-size: 2vw;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    font-size: 10px;
+  }
+  header h1 {
+    font-size: 5vw;
+    padding: 1vw;
+    margin-right: 0vw;
+  }
+
+  nav {
+    display: none;
+  }
+  .header-title {
+    font-size: 3.6vw;
+    text-align: left;
+    top: 1vw;
+    left: 1vw;
+  }
+  .about {
+    position: relative;
+    display: flex;
+    top: -10vw;
+  }
+  .about img {
+    display: none;
+  }
+  .about-content {
+    left: 6vw;
+  }
+  .about-content p {
+    font-size: 3.5vw;
+    text-align: left;
+    width: 700px;
+  }
+
+  .work {
+    left: 6vw;
+    top: 4vw;
+    align-items: flex-start;
+  }
+  .work .work-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5vw;
+  }
+  .project img {
+    width: 30vw;
+    height: 30vw;
+  }
+
+  .contact {
+    top: 15vw;
+    left: 6vw;
+  }
+  .contact h1 {
+    font-size: 4vw;
+  }
+  .contact .vwail {
+    font-size: 3.5vw;
+  }
+
+  .contact li {
+    display: block;
+    padding: 2vw;
+  }
+  .contact li a {
+    font-size: 2.5vw;
+  }
+  .footer {
+    top: 4vw;
+    padding: 1vw;
+    font-size: 2vw;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+
+  body {
+    font-size: 10px;
+  }
+  header h1 {
+    font-size: 3vw;
+    margin-right: 25vw;
+  }
+
+  nav {
+    left: 60vw;
+    top: 12vw;
+    z-index: 100;
+  }
+  nav li {
+    font-size: 3vw;
+  }
+  .header-title {
+    font-size: 5vw;
+    top: 1vw;
+    left: 1vw;
+  }
+  .about {
+    position: relative;
+    display: flex;
+    top: -20vw;
+  }
+  .about-content {
+    left: 10vw;
+  }
+  .about-content p {
+    font-size: 3.5vw;
+    text-align: left;
+    width: 25vw;
+  }
+  .about img {
+    margin-left: 1vw;
+  }
+
+  .work {
+    left: 10vw;
+    top: 4vw;
+    align-items: flex-start;
+  }
+  .work .work-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .project img {
+    width: 32vw;
+    height: 32vw;
+  }
+
+  .contact {
+    top: 10vw;
+    left: 8vw;
+  }
+  .contact h1 {
+    font-size: 8vw;
+  }
+  .contact .vwail {
+    font-size: 5vw;
+  }
+
+  .contact li a {
+    font-size: 4vw;
+    padding: 1vw;
+  }
+  .footer {
+    top: 4vw;
+    padding: 1vw;
+    font-size: 4vw;
+  }
+}
